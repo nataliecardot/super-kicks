@@ -11,7 +11,68 @@
 </head>
 
 <body>
+  <header class="hero">
+    <div class="container">
+      <h1 class="main-text"></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam vitae iste veritatis sequi
+        perspiciatis.</p>
+      <a href="#" class="btn"></a>
+    </div>
+  </header>
 
+  <main>
+    <section class="featured">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <!-- Splitting into 3 columns - can alternatively be called row -->
+        <div class="split">
+          <!-- Uses BEM methodology for class naming http://getbem.com/introduction/ -->
+          <a href="#" class="featured__item">
+            <img src="img/shoe-4.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span> Nice Shoes</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/shoe-5.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span> Nice Shoes</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/shoe-6.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span> Nice Shoes</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="our-products">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+
+        <article class="product">
+          <img src="img/shoe-1.png" alt="" class="product__image">
+          <h3 class="product__title">A Really Nice Shoe</h3>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatem
+            exercitationem officia hic esse alias!</p>
+          <a href="" class="btn">Buy</a>
+        </article>
+
+        <article class="product">
+          <img src="img/shoe-2.png" alt="" class="product__image">
+          <h3 class="product__title">A Really Nice Shoe</h3>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora saepe
+            deleniti nulla incidunt consequuntur?</p>
+          <a href="" class="btn">Buy</a>
+        </article>
+
+        <article class="product">
+          <img src="img/shoe-3.png" alt="" class="product__image">
+          <h3 class="product__title">A Really Nice Shoe</h3>
+          <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio alias
+            voluptas praesentium rem itaque.</p>
+          <a href="" class="btn">Buy</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
