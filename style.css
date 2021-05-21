@@ -28,3 +28,24 @@ p {
   max-width: 65em;
   margin: 0 auto;
 }
+
+.btn {
+  /* .btn is given to a elements, which are inline. With default inline, while you can apply padding top and bottom, it doesn't actually affect the flow; it can cause overlap. Plus, with inline-block, you can apply a margin top and bottom */
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-size: 1.125rem;
+  color: var(--clr-text, #fff);
+  background: var(--clr-accent, #0a6ab6);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+  /* ease is default transition-timing-function */
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
