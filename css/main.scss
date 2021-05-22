@@ -49,3 +49,33 @@ p {
   transform: scale(1.1);
   opacity: 0.9;
 }
+
+.primary-title {
+  font-size: 4rem;
+  /* min, preferred, max. returns preferred value until it exceeds min/max, then it returns min/max */
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.section-title {
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 15em 0;
+  background: #222; /* Fallback if backgroung-blend-mode not supported and/or @supports feature query not recognized */
+  // Can nest this thanks to using SCSS
+  @supports (background-blend-mode: multiply) {
+    background: url('../img/shoe-3.png'), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+  }
+  /* Try this for pattern */
+  /* background-size: 10%; */
+}
+
+// // Format if were using regular CSS
+// @supports (property: value) {
+//   .hero { }
+// }

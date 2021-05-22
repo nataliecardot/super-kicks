@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  /* 65 x 16 */
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.btn {
+  /* .btn is given to a elements, which are inline. With default inline, while you can apply padding top and bottom, it doesn't actually affect the flow; it can cause overlap. Plus, with inline-block, you can apply a margin top and bottom */
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-size: 1.125rem;
+  color: var(--clr-text, #fff);
+  background: var(--clr-accent, #0a6ab6);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+  /* ease is default transition-timing-function */
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.primary-title {
+  font-size: 4rem;
+  /* min, preferred, max. returns preferred value until it exceeds min/max, then it returns min/max */
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+  /* Fallback if backgroung-blend-mode not supported and/or @supports feature query not recognized */
+  /* Try this for pattern */
+  /* background-size: 10%; */
+}
+
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url("../img/shoe-3.png"), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+  }
+}
+/*# sourceMappingURL=main.css.map */
