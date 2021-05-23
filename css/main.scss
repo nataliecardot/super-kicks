@@ -76,6 +76,8 @@ p {
   @supports (background-blend-mode: multiply) {
     background: url('../img/shoe-3.png'), radial-gradient(#444, #111);
     background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   /* Try this for pattern */
   /* background-size: 10%; */
