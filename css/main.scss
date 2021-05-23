@@ -29,6 +29,12 @@ p {
   margin: 0 auto;
 }
 
+// Adjacent sibling of a direct child of .spacing
+// Only applied to children that have a sibling before them
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
 .btn {
   /* .btn is given to a elements, which are inline. With default inline, while you can apply padding top and bottom, it doesn't actually affect the flow; it can cause overlap. Plus, with inline-block, you can apply a margin top and bottom */
   display: inline-block;
