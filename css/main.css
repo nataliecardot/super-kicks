@@ -83,6 +83,7 @@ p {
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 /*# sourceMappingURL=main.css.map */
