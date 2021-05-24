@@ -22,11 +22,27 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 7rem 0;
+}
+
 .container {
   width: 85%;
   /* 65 x 16 */
   max-width: 65em;
   margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  gap: 1em; // Flex layout gap now supported in all major browsers (Safari added to the list 4/21)
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    flex-basis: 30%;
+    min-width: 15em; // 240
+  }
 }
 
 // Adjacent sibling of a direct child of .spacing
@@ -65,6 +81,11 @@ p {
 }
 
 .section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
 }
 
 .hero {

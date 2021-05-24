@@ -23,11 +23,33 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 7rem 0;
+}
+
 .container {
   width: 85%;
   /* 65 x 16 */
   max-width: 65em;
   margin: 0 auto;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.split > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 15em;
 }
 
 .spacing > * + * {
@@ -65,6 +87,14 @@ p {
   font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
   line-height: 1.1;
   text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
 }
 
 .hero {
