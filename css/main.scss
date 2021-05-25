@@ -39,6 +39,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 
+  // & always refers to the parent selector when nesting. Think of the & as being removed and replaced with the parent selector
   & > * {
     flex-basis: 30%;
     min-width: 15em; // 240
@@ -109,3 +110,25 @@ section {
 // @supports (property: value) {
 //   .hero { }
 // }
+
+.featured {
+  background: #eee;
+
+  &__item {
+    display: block;
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out; // Default: ease
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+    }
+
+    &::after {
+      // Any time you have a pseudoelement, you need to give it content to make it exist
+      content: '';
+      position: absolute;
+    }
+  }
+}
