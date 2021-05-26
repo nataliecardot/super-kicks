@@ -129,6 +129,15 @@ section {
       // Any time you have a pseudoelement, you need to give it content to make it exist
       content: '';
       position: absolute;
+      // Padding as a percent is percent of parent's width, not element that has padding
+      // Same with margins: if you do margin-top of 100%, it's based on width of its parent
+      padding: 75% 75% 0 0;
+      top: 10%;
+      left: 10%;
+      border-radius: 50%;
+      background: #2193b0;
+      // This -1 is within stacking context created by transforms, rather than being within scope of whole site. Without transforms, it goes behind gray background
+      z-index: -1;
     }
   }
 }

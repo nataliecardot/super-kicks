@@ -140,5 +140,11 @@ section {
 .featured__item::after {
   content: '';
   position: absolute;
+  padding: 75% 75% 0 0;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
