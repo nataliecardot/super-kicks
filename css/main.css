@@ -169,6 +169,9 @@ section {
 }
 
 .product {
-  background: radial-gradient(red, yellow);
+  background: radial-gradient(var(--clr-inner, purple), var(--clr-outer, #3b353b));
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 3em;
 }
 /*# sourceMappingURL=main.css.map */

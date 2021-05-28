@@ -162,5 +162,11 @@ section {
 }
 
 .product {
-  background: radial-gradient(red, yellow);
+  background: radial-gradient(
+    var(--clr-inner, purple),
+    var(--clr-outer, rgb(59, 53, 59))
+  );
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 3em;
 }
