@@ -1,4 +1,4 @@
-# super-kicks-landing-page
+# super-kicks
 
 Landing page made with Sass/HTML/CSS
 
