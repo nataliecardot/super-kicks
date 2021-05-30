@@ -177,4 +177,28 @@ section {
     color: #fff;
     text-shadow: 0 0 0.2em rgba(#000, 0.2);
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.shoe-red {
+  // Since these inner and outer properties are used on product, must be declared on product (or further out, since custom properties get inherited) - shoe-red is also declared on product so it works
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  // --clr-accent is used on btn, which is a descendant of product,
+  --clr-accent: #8a1232;
+}
+
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #0f5f3e;
 }

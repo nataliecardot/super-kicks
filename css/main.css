@@ -182,4 +182,26 @@ section {
   color: #fff;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
+
+.product:last-of-type {
+  margin-bottom: 0;
+}
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #8a1232;
+}
+
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #0f5f3e;
+}
 /*# sourceMappingURL=main.css.map */
