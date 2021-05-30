@@ -104,8 +104,6 @@ section {
   }
   /* Try this for pattern */
   /* background-size: 10%; */
-
-  --clr-accent: #f57c00;
 }
 
 // // Format if were using regular CSS
@@ -191,6 +189,12 @@ section {
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+// CUSTOM PROPERTIES
+
+.hero {
+  --clr-accent: #f57c00;
 }
 
 .shoe-red {
