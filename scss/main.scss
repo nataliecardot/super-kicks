@@ -104,6 +104,8 @@ section {
   }
   /* Try this for pattern */
   /* background-size: 10%; */
+
+  --clr-accent: #f57c00;
 }
 
 // // Format if were using regular CSS
@@ -169,6 +171,7 @@ section {
   padding: 3em;
   border-radius: 1em;
   margin-bottom: 3em;
+  // text-align: center affects pure text nodes as well as child elements that have display: inline; or display: inline-block;
   text-align: center;
 
   &__title {
@@ -176,6 +179,13 @@ section {
     line-height: 1.1;
     color: #fff;
     text-shadow: 0 0 0.2em rgba(#000, 0.2);
+  }
+
+  &__description {
+    word-wrap: break-word;
+    max-width: 40em;
+    // Replicating .spacing styling
+    margin: 2rem auto 0 auto;
   }
 
   &:last-of-type {
@@ -188,17 +198,17 @@ section {
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
   // --clr-accent is used on btn, which is a descendant of product,
-  --clr-accent: #8a1232;
+  --clr-accent: #880e4f;
 }
 
 .shoe-white {
   --clr-inner: #fce4b3;
   --clr-outer: #eac886;
-  --clr-accent: #2f4858;
+  --clr-accent: #ff7043;
 }
 
 .shoe-blue {
   --clr-inner: #6dd5ed;
   --clr-outer: #2193b0;
-  --clr-accent: #0f5f3e;
+  --clr-accent: #1565c0;
 }

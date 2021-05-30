@@ -105,6 +105,7 @@ section {
   /* Fallback if backgroung-blend-mode not supported and/or @supports feature query not recognized */
   /* Try this for pattern */
   /* background-size: 10%; */
+  --clr-accent: #f57c00;
 }
 
 @supports (background-blend-mode: multiply) {
@@ -183,6 +184,12 @@ section {
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 
+.product__description {
+  word-wrap: break-word;
+  max-width: 40em;
+  margin: 2rem auto 0 auto;
+}
+
 .product:last-of-type {
   margin-bottom: 0;
 }
@@ -190,18 +197,18 @@ section {
 .shoe-red {
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
-  --clr-accent: #8a1232;
+  --clr-accent: #880e4f;
 }
 
 .shoe-white {
   --clr-inner: #fce4b3;
   --clr-outer: #eac886;
-  --clr-accent: #2f4858;
+  --clr-accent: #ff7043;
 }
 
 .shoe-blue {
   --clr-inner: #6dd5ed;
   --clr-outer: #2193b0;
-  --clr-accent: #0f5f3e;
+  --clr-accent: #1565c0;
 }
 /*# sourceMappingURL=main.css.map */
