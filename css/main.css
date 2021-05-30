@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
 }
 
@@ -24,7 +24,13 @@ p {
 }
 
 section {
-  padding: 7rem 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 7rem 0;
+  }
 }
 
 .container {
@@ -61,13 +67,11 @@ section {
   display: inline-block;
   font-weight: 700;
   text-decoration: none;
-  /* text-transform: uppercase; */
   font-size: 1.125rem;
   color: var(--clr-text, #fff);
   background: var(--clr-accent, #0a6ab6);
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
-  /* ease is default transition-timing-function */
   -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, opacity 250ms linear;
@@ -84,9 +88,10 @@ section {
 .primary-title {
   font-size: 4rem;
   /* min, preferred, max. returns preferred value until it exceeds min/max, then it returns min/max */
-  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  font-size: clamp(3rem, calc(5vw + 2rem), 6rem);
   line-height: 1.1;
   text-transform: uppercase;
+  font-family: 'Righteous', sans-serif;
 }
 
 .section-title {
@@ -100,7 +105,17 @@ section {
 .hero {
   color: #fff;
   text-align: center;
-  padding: 15em 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #222;
   /* Fallback if backgroung-blend-mode not supported and/or @supports feature query not recognized */
   /* Try this for pattern */
