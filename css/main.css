@@ -2,7 +2,11 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,15 +50,15 @@ section {
   display: flex;
   gap: 1em;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .split > * {
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 30%;
   min-width: 15em;
 }
 
@@ -75,13 +79,14 @@ section {
   -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, opacity 250ms linear;
-  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear,
+    -webkit-transform 250ms ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   opacity: 0.9;
 }
 
@@ -111,11 +116,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: #222;
   /* Fallback if backgroung-blend-mode not supported and/or @supports feature query not recognized */
   /* Try this for pattern */
@@ -124,7 +129,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url("../img/shoe-3.png"), radial-gradient(#444, #111);
+    background: url('../img/shoe-3.png'), radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -140,7 +145,7 @@ section {
   display: block;
   position: relative;
   -webkit-transform: scale(0.85);
-          transform: scale(0.85);
+  transform: scale(0.85);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -151,12 +156,14 @@ section {
   line-height: 1.2;
 }
 
-.featured__item:hover, .featured__item:focus {
+.featured__item:hover,
+.featured__item:focus {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
-.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
   opacity: 1;
 }
 
@@ -184,7 +191,10 @@ section {
 }
 
 .product {
-  background: radial-gradient(var(--clr-inner, purple), var(--clr-outer, #3b353b));
+  background: radial-gradient(
+    var(--clr-inner, purple),
+    var(--clr-outer, #3b353b)
+  );
   padding: 3em;
   border-radius: 1em;
   margin-bottom: 6em;
